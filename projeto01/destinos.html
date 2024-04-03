@@ -4,25 +4,6 @@
     <title>JM Viagens - Página principal</title>
     <meta charset="utf-8"/>
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-        }
-        .background-image {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
-        .container {
-            width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
         .destination {
             width: 300px;
             text-align: justify;
@@ -30,7 +11,6 @@
             margin: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.8);
         }
         .destination img {
             width: 100%;
@@ -42,36 +22,91 @@
     </style>
 </head>
 <body>
-    <img src="imagens/destinos.jpg" class="background-image" alt="Destinos">
-
-    <div class="container">
-        <table border="0px" width="100%" cellpadding="10" cellspacing="5"> 
-            <tr>
-                <td> <img src="imagens/logo.png"/> </td>
-                <td style="text-align: right;">
-                    <a href="index.html">Home</a> |
-                    <a href="quem-somos.html">Quem somos</a> |
-                    <a href="contato.html">Contato</a> |
-                    <a href="destinos.html">Destinos</a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                    <div class="container">
-                        <h1 style="text-align: center; color: white;">Conheça nossos destinos</h1>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td class="destination"> 
-                    <img src="imgdestinos/china.jpg">
-                    <p><b>China</b></p>
-                    <p>Valor do pacote: R$ 4000 à vista ou em até 5 parcelas sem juros</p>
-                    <p>Duração: 1 a 10 dias</p>
-                    <p>Número de pessoas: até 2 inclusas no pacote</p>    
-                </td>
-            </tr>
-        </table>
-    </div>
+    <table border="0px" width="900px" align="center" cellpadding="10" cellspacing="5"> 
+        <tr>
+            <td> <img src="imagens/logo.png"/> </td>
+            <td style="text-align: right;">
+                <a href="index.html">Home</a> |
+                <a href="quem-somos.html">Quem somos</a> |
+                <a href="contato.html">Contato</a> |
+                <a href="destinos.html">Destinos</a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"> <img src="imagens/destinos.jpg" width="100%"> </td>
+        </tr>
+        <tr>
+            <td class="destination"> 
+                <img src="imgdestinos/china.jpg">
+                <p><b>China</b></p>
+                <p>Valor do pacote: R$ 4000 à vista ou em até 5 parcelas sem juros</p>
+                <p>Duração: 1 a 10 dias</p>
+                <p>Número de pessoas: até 2 inclusas no pacote</p>    
+            </td>
+            <td class="destination"> 
+                <img src="imgdestinos/dubai.jpg">
+                <p><b>Dubai</b></p>
+                <p>Valor do pacote: R$ 3500 à vista ou em até 5 parcelas sem juros</p>
+                <p>Duração: 1 a 8 dias</p>
+                <p>Número de pessoas: até 2 inclusas no pacote</p>    
+            </td>
+            <td class="destination"> 
+                <img src="imgdestinos/india.jpg">
+                <p><b>Índia</b></p>
+                <p>Valor do pacote: R$ 4200 à vista ou em até 5 parcelas sem juros</p>
+                <p>Duração: 1 a 12 dias</p>
+                <p>Número de pessoas: até 3 inclusas no pacote</p>    
+            </td>
+        </tr>
+        <tr>
+            <td class="destination"> 
+                <img src="imgdestinos/newyork.jpg">
+                <p><b>Nova York</b></p>
+                <p>Valor do pacote: R$ 5000 à vista ou em até 5 parcelas sem juros</p>
+                <p>Duração: 1 a 7 dias</p>
+                <p>Número de pessoas: até 2 inclusas no pacote</p>    
+            </td>
+            <td class="destination"> 
+                <img src="imgdestinos/paris.jpg">
+                <p><b>Paris com visita a Torre Eiffel</b></p>
+                <p>Valor do pacote: R$ 3800 à vista ou em até 5 parcelas sem juros</p>
+                <p>Duração: 1 a 6 dias</p>
+                <p>Número de pessoas: até 2 inclusas no pacote</p>    
+            </td>
+            <td class="destination"> 
+                <img src="imgdestinos/paris2.jpg">
+                <p><b>Paris com visita ao Arco do Triunfo</b></p>
+                <p>Valor do pacote: R$ 3250 à vista ou em até 5 parcelas sem juros</p>
+                <p>Duração: 1 a 10 dias</p>
+                <p>Número de pessoas: até 3 inclusas no pacote</p>    
+            </td>
+        </tr>
+        <tr>
+            <td class="destination"> 
+                <img src="imgdestinos/rio.jpg">
+                <p><b>Rio de Janeiro</b></p>
+                <p>Valor do pacote: R$ 1500 à vista ou em até 5 parcelas sem juros</p>
+                <p>Duração: 1 a 8 dias</p>
+                <p>Número de pessoas: até 4 inclusas no pacote</p>    
+            </td>
+            <td class="destination"> 
+                <img src="imgdestinos/roma.jpg">
+                <p><b>Roma</b></p>
+                <p>Valor do pacote: R$ 2850 à vista ou em até 5 parcelas sem juros</p>
+                <p>Duração: 1 a 8 dias</p>
+                <p>Número de pessoas: até 2 inclusas no pacote</p>    
+            </td>
+            <td class="destination"> 
+                <img src="imgdestinos/vaticano.jpg">
+                <p><b>Vaticano</b></p>
+                <p>Valor do pacote: R$ 4600 à vista ou em até 5 parcelas sem juros</p>
+                <p>Duração: 1 a 6 dias</p>
+                <p>Número de pessoas: até 2 inclusas no pacote</p>    
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"> <h4 style="text-align: center;">Todos os direitos reservados</h4></td>
+        </tr>
+    </table>
 </body>
 </html>
