@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Box Model</title>
+    <style>
+        body{
+            background-color: #61bd8c;
+        }
+        #conteudo{
+            background-color: #FFFFFF;
+            padding: 10px;
+            width: 900px;
+            margin: 30px auto;
+        }
+        .caixa{
+            background-color: red;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            color: #FFFFFF;
+        }
+        #relativo{
+            position: relative;
+            left: 30px;
+        }
+        #absoluto{
+            position: absolute;
+            left: 30px;
+        }
+        #fixo{
+            position: fixed;
+            left: 200px;
+            top: 0px;
+        }
+    </style>
 </head>
 <body>
-    
+    <span>Container body</span>
+    <div id="conteudo">
+        Container div
+
+        <div id="relativo" class="caixa">
+            Relativo
+        </div>
+        <div id="absoluto" class="caixa">
+            Absoluto
+        </div>
+        <div id="fixo" class="caixa">
+            Fixo
+        </div>
+
+    </div>
 </body>
 </html>
