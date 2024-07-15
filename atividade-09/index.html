@@ -3,52 +3,87 @@
 <head>
     <title>Box Model</title>
     <style>
-        body{
-            background-color: #61bd8c;
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end; 
         }
-        #conteudo{
-            background-color: #FFFFFF;
-            padding: 10px;
-            width: 900px;
-            margin: 30px auto;
+        #header, .common-menu-footer {
+            width: 100%;
+            padding-right: 40px; 
+            box-sizing: border-box; 
         }
-        .caixa{
-            background-color: red;
-            margin: 10px;
-            width: 100px;
-            height: 100px;
-            color: #FFFFFF;
+        #header {
+            background-color: #4169E1;
+            height: 20%;
+            text-align: right;
+            padding-top: 20px; 
         }
-        #relativo{
-            position: relative;
-            left: 30px;
+        .common-menu-footer {
+            height: 5%;
+            display: flex;
+            align-items: center;
+            padding-left: 30px; 
         }
-        #absoluto{
-            position: absolute;
-            left: 30px;
+        #menu{
+            background-color: #FF6347;
         }
-        #fixo{
-            position: fixed;
-            left: 200px;
-            top: 0px;
+        #footer {
+            background-color: purple; 
+        }
+        #main-content {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+        #left {
+            background-color: yellow;
+            width: 25%;
+        }
+        #center {
+            background-color: green;
+            width: 50%;
+        }
+        #right {
+            background-color: orange;
+            width: 25%;
+        }
+        .classleft {
+            padding-top: 20px;
+            padding-left: 5px; 
+        }
+        .classcenter {
+            padding-top: 20px;
+            padding-left: 15px;
+        }
+        .classright {
+            padding-top: 20px;
+            padding-left: 10px; 
         }
     </style>
 </head>
 <body>
-    <span>Container body</span>
-    <div id="conteudo">
-        Container div
-
-        <div id="relativo" class="caixa">
-            Relativo
+    <div id="header">
+        Header
+    </div>
+    <div id="menu" class="common-menu-footer">
+        Menu
+    </div>
+    <div id="main-content">
+        <div id="left" class="classleft">
+            Left
         </div>
-        <div id="absoluto" class="caixa">
-            Absoluto
+        <div id="center" class="classcenter">
+            Center
         </div>
-        <div id="fixo" class="caixa">
-            Fixo
+        <div id="right" class="classright">
+            Right
         </div>
-
+    </div>
+    <div id="footer" class="common-menu-footer">
+        Footer
     </div>
 </body>
 </html>
