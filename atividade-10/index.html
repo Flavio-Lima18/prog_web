@@ -1,11 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .menu {
+            background-color: #EEE685;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            font-size: 18px;
+            padding: 10px;
+        }
+        a:link {
+            color: #B9C941;
+            text-decoration: none;
+        }
+        a:visited {
+            color: #458B00;
+        }
+        a:hover {
+            color: #8b4726;
+        }
+        a:active {
+            color: #FF1493;
+        }
+        a {
+            text-decoration: none;
+        }
+        .elemento:hover {
+            background: yellow;
+        }
+        .style-logo {
+            float: left;
+            margin: 10px 15px 15px 0;
+            width: 10%;
+        }
+        .style-img {
+            float: right;
+            border-color: black;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 10px;
+            width: 50px;
+            height: 50px;
+            margin-left: 15px;
+        }
+        #footer {
+            color: grey;
+            padding-left: 10px;
+            clear: both; /* Certifica que o footer ficará abaixo dos elementos flutuantes */
+        }
+        #card-container {
+            display: flex;
+            justify-content: space-between; /* Espaçamento igual entre os cards */
+            padding: 20px;
+        }
+        .card {
+            width: 45%; /* Define a largura dos cards */
+            border-width: 1px;
+            border-color: gray;
+            border-style: solid;
+            padding: 10px; /* Adiciona espaçamento interno */
+            overflow: hidden; /* Limpa flutuações dentro do card */
+            margin: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        .card-header, .card-content, .card-footer {
+            width: 100%;
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .card-header img {
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <nav>
+        <div id="card-container">
+            <div class="card">
+                <div class="card-content">
+                    <header>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Ge.globo_logo.svg/1200px-Ge.globo_logo.svg.png" class="style-logo">
+                    </header>
+                    <p><img src="https://i.pinimg.com/736x/7d/77/e7/7d77e7d9c9968c4ab8280c3a5154c34e.jpg" class="style-img">Mbappé é apresentado no Real Madrid: "Sou um garoto feliz hoje"</p>
+                </div>
+                <footer id="footer">Por Redação do ge — Madri, 
+                    Espanha 16/07/2024 07h47  
+                    Atualizado há 5 horas</footer>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://pbs.twimg.com/profile_images/1325810473678344199/6hGtpeiU_200x200.jpg" class="style-logo">
+                </div>
+                <div class="card-content">
+                    <p><img src="https://whyy.org/wp-content/uploads/2022/09/joel-embiid-ap-2022-09-29.jpg" class="style-img"> Steve Kerr pode testar titulares dos EUA sem Joel Embiid</p>
+                </div>
+                <footer id="footer">Por Higor Goulart
+                    Postado em 16 jul 2024 às 19:18</footer>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/R7_logo.svg/2000px-R7_logo.svg.png" class="style-logo">
+                </div>
+                <div class="card-content">
+                    <p><img src="https://p2.trrsf.com/image/fget/cf/1200/1600/middle/images.terra.com/2023/04/03/807637282-comemoracao-raphael-veiga.jpg" class="style-img"> Empresário revela proposta de R$ 118 milhões por Raphael Veiga</p>
+                </div>
+                <footer id="footer">Jorge NicolaOpens in new window
+                    16/07/2024 - 14H07 (ATUALIZADO EM 16/07/2024 - 14H29)</footer>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://www.imagensempng.com.br/wp-content/uploads/2023/05/687-1.png" class="style-logo">
+                </div>
+                <div class="card-content">
+                    <p><img src="https://s2-g1.glbimg.com/4q19FsaZayThj3QiPMQmSh2G-40=/0x0:1082x814/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/W/K/NMdBoYSAebvHm2pbtceg/vbmt-lsr-4x4-guaicurus-3.jpg" class="style-img"> Exército conclui compra de 420 blindados leves 'Guaicuru' no valor total de R$ 1,4 bilhão</p>
+                </div>
+                <footer id="footer">Por g1 — Brasília
+                    16/07/2024 18h04  Atualizado há 3 horas</footer>
+            </div>
+        </div>
+    </nav>
 </body>
 </html>
