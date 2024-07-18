@@ -1,11 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portal de Notícias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        header, footer {
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            width: 25%;
+            background-color: #444;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin-bottom: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+        aside {
+            width: 25%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #e0e0e0;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        .news article {
+            margin-bottom: 20px;
+        }
+        .news img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .content {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .content h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .content a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .content span {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #999;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Portal de Notícias</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Esportes</a></li>
+                <li><a href="#">Entretenimento</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="news">
+                    <article>
+                        <img src="https://f.i.uol.com.br/fotografia/2019/11/23/15745553545dd9ceda2a6ed_1574555354_3x2_md.jpg" alt="Imagem do Flamengo">
+                        <div class="content">
+                            <h2>Flamengo Conquista a Copa Libertadores da América</h2>
+                            <p>O Flamengo sagrou-se campeão da Copa Libertadores da América pela terceira vez em sua história. Em uma final eletrizante contra o River Plate, o clube carioca venceu por 2 a 1, com 2 gols de Gabigol, no apagar das luzes</p>
+                            <a href="#">Leia mais</a>
+                            <span>Atualizado em <time datetime="2021-11-21">21/11/2021</time></span>
+                        </div>
+                    </article>
+                <article>
+                    <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/07/11/1927447577-vascodagama17206272343409190788460096847188126511-aspect-ratio-512-320.jpg" alt="Imagem da Notícia 2">
+                    <div class="content">
+                        <h2>Philippe Coutinho declara gratidão ao Vasco no retorno ao clube</h2>
+                        <p>O atleta Philippe Coutinho declarou gratidão pelo Vasco no retorno ao clube, em coletiva, neste domingo (13). O jogador foi recebido com . A expectativa é de que Philippe estreie em campo novamente pelo time, na próxima quarta-feira (17), contra o Atlético Goianiense, fora de casa.</p>
+                        <a href="#">Leia mais</a>
+                        <span>Atualizado em <time datetime="2024-07-16">16/07/2023</time></span>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <aside>
+            <h2>Publicidade</h2>
+            <div>
+                <img src="https://acdn.mitiendanube.com/stores/002/322/390/products/camisa-al-hilal-home-neymar-011-8104b43389129fdd6a16935089706540-480-0.jpeg" alt="Banner 1">
+                <img src="https://storage-cdn.static-gm.com/ah/97164e54-ce63-4fd9-bc7e-22a4c474c71a/f7aa4467-39c1-4cd5-9811-b8c610c1706d/739fdf19-fe6f-4f1f-97dd-552da0eb2cef20231229152842.jpeg" alt="Banner 2">
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; 2024 Portal de Notícias. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
