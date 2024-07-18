@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Atributo Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .pessoa.red {
+            color: red;
+        }
+        .pessoa.blue {
+            color: blue;
+        }
+        .pessoa.red::before {
+            content: '●';
+            color: red;
+            margin-right: 5px;
+        }
+        .pessoa.blue::before {
+            content: '●';
+            color: blue;
+            margin-right: 5px;
+        }
+        .details {
+            display: none;
+            margin-left: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+    <script type="text/javascript">
+        function mostrarvalor(componente) {
+            var idade = componente.getAttribute("data-idade");
+            var cpf = componente.getAttribute("data-cpf");
+            var details = componente.querySelector(".details");
+            details.textContent = " - Idade: " + idade + " Anos - C.P.F: " + cpf;
+            details.style.display = "inline";
+        }
+    </script>
 </head>
 <body>
-    
+    <h1>Informações</h1>
+    <ul>
+        <li class="pessoa red" onclick="mostrarvalor(this)" data-idade="20" data-cpf="999">Nome: João <span class="details"></span></li>
+        <li class="pessoa blue" onclick="mostrarvalor(this)" data-idade="30" data-cpf="888">Nome: José <span class="details"></span></li>
+        <li class="pessoa red" onclick="mostrarvalor(this)" data-idade="40" data-cpf="777">Nome: Maria <span class="details"></span></li>
+    </ul>
 </body>
 </html>
