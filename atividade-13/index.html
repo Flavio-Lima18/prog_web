@@ -13,17 +13,52 @@
             -webkit-border-radius: 20px;
             -moz-border-radius: 20px;
         }
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        .h1{
+            font-weight: bold;
+            font-size: 28px;
+            padding: 10px;
+        }
+        .container{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height: 100vh;
+
+        }
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: conic-gradient(
+                red 0% 25%, 
+                yellow 25% 50%, 
+                green 50% 75%, 
+                blue 75% 100%
+            );
+        }
+        .flower {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: conic-gradient(
+                red 0% 25%, 
+                yellow 25% 50%, 
+                green 50% 75%, 
+                blue 75% 100%
+            );
+        }
+
     </style>
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="normalize.css">
 </head>
 <body>
-    <div class="box">
-    <fieldset>
-        <legend>Dados Pessoais</legend>
-        <p>Nome: <input type="text"/> </p>
-        <p>E-mail: <input type="text"/> </p>
-    </fieldset>
+    <h1 class="h1">Box-Sizing e Normalize</h1>
+    <div class="container">
+        <div class="circle"></div>
     </div>
 </body>
 </html>
