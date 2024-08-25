@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sistema de Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            height: 100vh;
+            padding: 0;
+            display: flex;
+            align-items: stretch;
+        }
+        .coluna {
+            padding: 0;
+            margin-bottom: 10px;
+        }
+        .img-full-height {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .img-third-height {
+            height: calc((100vh - 30px) / 3); 
+            width: 100%;
+            object-fit: cover;
+        }
+        .img-two-col {
+            height: calc((100vh - 30px) / 3);
+            width: 100%;
+            object-fit: cover;
+        }
+        .row {
+            margin-right: -10px; 
+        }
+        .col-6, .col-4 {
+            padding-right: 10px; 
+        }
+        .col-4:last-child {
+            padding-right: 0; 
+        }
+        .col-12 {
+            margin: 10px; 
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 coluna">
+                <img src="https://i.pinimg.com/564x/f6/d2/76/f6d276c0f8b168e8f83528cc324b26cf.jpg" class="img-full-height" alt="Imagem 1">
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-12 coluna">
+                        <img src="https://www.lance.com.br/galerias/wp-content/uploads/2022/10/meme-vasco-sampaio-serie-b-3-599x474.jpg" class="img-third-height" alt="Imagem 2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 coluna">
+                        <img src="https://i.pinimg.com/236x/9c/49/77/9c49772fadb3f66f34a8d39e95c25a99.jpg" class="img-third-height" alt="Imagem 3">
+                    </div>
+                    <div class="col-6 coluna">
+                        <img src="https://i.pinimg.com/564x/55/99/b6/5599b6609467a3c4a29e806b2070fcda.jpg" class="img-third-height" alt="Imagem 4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 coluna">
+                        <img src="https://i.pinimg.com/564x/ed/64/5b/ed645b732a87b3b05e51e851583748ca.jpg" class="img-two-col" alt="Imagem 5">
+                    </div>
+                    <div class="col-4 coluna">
+                        <img src="https://pbs.twimg.com/media/DZ4HkgbW0AAJI5k.jpg" class="img-two-col" alt="Imagem 6">
+                    </div>
+                    <div class="col-4 coluna">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB3NN7czBIQWZFDFZnyzc91hXUQikH9T1kR5TOqnPl3x5meJ5ehuG1m0_jXqAQ2NrCQy0&usqp=CAU" class="img-two-col" alt="Imagem 7">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
